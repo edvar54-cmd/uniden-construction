@@ -325,7 +325,7 @@
     }
 
     .hero-headline {
-      font-size: clamp(32px, 5vw, 58px);
+      font-size: clamp(26px, 5vw, 58px);
       font-weight: 900;
       line-height: 1.1;
       color: var(--white);
@@ -1189,6 +1189,9 @@
     }
 
     @media (max-width: 480px) {
+      .hero-content { padding: 96px 0 52px; }
+      .hero-headline { font-size: 24px; }
+      .hero-sub { font-size: 14px; margin-bottom: 24px; }
       .hero-actions { flex-direction: column; }
       .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
       .btn-cta-white, .btn-cta-outline { width: 100%; justify-content: center; }
@@ -1290,33 +1293,18 @@
   <div class="hero-bg"></div>
   <div class="container">
     <div class="hero-content">
-      <div class="hero-eyebrow">
-        <div class="hero-eyebrow-line"></div>
-        <span class="hero-eyebrow-text">
-          <span data-lang="en" class="active">Trusted Construction Partner</span>
-          <span data-lang="lv">Uzticams būvniecības partneris</span>
-          <span data-lang="pl">Zaufany partner budowlany</span>
-        </span>
-      </div>
-
       <h1 class="hero-headline">
         <!-- EN -->
         <span data-lang="en" class="active">
-          Stop Guessing on Your Next Build.<br>
-          We Deliver <em>On Time, On Budget</em>,<br>
-          and with Uncompromising Quality.
+          Stop Guessing on Your Next Build. We Deliver <em>On Time, On Budget</em>, and with Uncompromising Quality.
         </span>
         <!-- LV -->
         <span data-lang="lv">
-          Pārtrauciet minēt par savu<br>
-          nākamo būvprojektu. Mēs nododam<br>
-          <em>laikā, budžetā</em>, ar izcilu kvalitāti.
+          Pārtrauciet minēt par savu nākamo būvprojektu. Mēs nododam <em>laikā, budžetā</em>, ar izcilu kvalitāti.
         </span>
         <!-- PL -->
         <span data-lang="pl">
-          Przestań zgadywać przy swoim<br>
-          następnym projekcie. Budujemy<br>
-          <em>na czas, w budżecie</em>, bez kompromisów.
+          Przestań zgadywać przy swoim następnym projekcie. Budujemy <em>na czas, w budżecie</em>, bez kompromisów.
         </span>
       </h1>
 

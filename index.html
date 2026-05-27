@@ -67,12 +67,9 @@
       position: fixed;
       top: 0; left: 0; right: 0;
       z-index: 1000;
-      background: rgba(8, 43, 91, 0.97);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background: #082B5B;
       border-bottom: 1px solid rgba(201, 204, 211, 0.15);
       transition: box-shadow var(--transition);
-      overflow: hidden;
     }
 
     nav.scrolled {
@@ -83,7 +80,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 76px;
+      height: 84px;
     }
 
     .nav-logo {
@@ -94,9 +91,9 @@
     }
 
     .nav-logo img {
-      height: 52px;
+      height: 68px;
       width: auto;
-      max-width: 160px;
+      max-width: 200px;
       object-fit: contain;
       border-radius: 6px;
       transition: opacity var(--transition);
@@ -1155,7 +1152,7 @@
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .desktop-lang { display: none; }
-      .nav-logo img { height: 44px; }
+      .nav-logo img { height: 56px; }
 
       #services, #process { padding: 70px 0; }
       #authority { padding: 80px 0; }
@@ -1196,7 +1193,7 @@
     }
 
     @media (max-width: 480px) {
-      .nav-logo img { height: 38px; max-width: 130px; }
+      .nav-logo img { height: 48px; max-width: 150px; }
       .hero-content { padding: 96px 0 52px; }
       .hero-headline { font-size: 24px; }
       .hero-sub { font-size: 14px; margin-bottom: 24px; }
@@ -2114,7 +2111,7 @@
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        const offset = 76; // nav height
+        const offset = 84; // nav height
         const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
         window.scrollTo({ top, behavior: 'smooth' });
       }

@@ -72,6 +72,7 @@
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(201, 204, 211, 0.15);
       transition: box-shadow var(--transition);
+      overflow: hidden;
     }
 
     nav.scrolled {
@@ -93,18 +94,15 @@
     }
 
     .nav-logo img {
-      height: 56px;
+      height: 52px;
       width: auto;
-      max-width: 200px;
+      max-width: 160px;
       object-fit: contain;
-      border-radius: 8px;
-      padding: 5px 12px;
-      background: rgba(255,255,255,0.96);
-      box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+      border-radius: 6px;
       transition: opacity var(--transition);
     }
 
-    .nav-logo img:hover { opacity: 0.92; }
+    .nav-logo img:hover { opacity: 0.88; }
 
     /* Text shown only as fallback when logo.png fails to load */
     .nav-logo-text {
@@ -1157,7 +1155,7 @@
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .desktop-lang { display: none; }
-      .nav-logo img { height: 48px; padding: 4px 10px; }
+      .nav-logo img { height: 44px; }
 
       #services, #process { padding: 70px 0; }
       #authority { padding: 80px 0; }
@@ -1198,7 +1196,7 @@
     }
 
     @media (max-width: 480px) {
-      .nav-logo img { height: 42px; padding: 3px 8px; max-width: 150px; }
+      .nav-logo img { height: 38px; max-width: 130px; }
       .hero-content { padding: 96px 0 52px; }
       .hero-headline { font-size: 24px; }
       .hero-sub { font-size: 14px; margin-bottom: 24px; }
